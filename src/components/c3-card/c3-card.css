@@ -20,28 +20,32 @@ h5, span, p, a {
   margin: var(--spacing-0);
 }
 
-/* @TODO Add PostCSS Nested to Nest Styles. */
-/* @TODO Add Design Tokens. */
 .card {
   display: flex;
   flex-direction: column;
+  height: 100%;
   border: 1px solid goldenrod;
   border-radius: var(--spacing-3xs);
   padding: var(--spacing-0) var(--spacing-base) var(--spacing-0) var(--spacing-base);
-}
 
-::slotted([slot='image']) {
-  width: 100%;
-  border-top-left-radius: calc(var(--spacing-3xs) - var(--spacing-px));
-  border-top-right-radius: calc(var(--spacing-3xs) - var(--spacing-px));
-}
+  ::slotted([slot='image']) {
+    width: 100%;
+    border-top-left-radius: calc(var(--spacing-3xs) - var(--spacing-px));
+    border-top-right-radius: calc(var(--spacing-3xs) - var(--spacing-px));
+  }
 
-.card__headline {
-  font-size: var(--font-size-base);
-  font-weight: bold;
-  margin-bottom: var(--spacing-base);
-}
+  .card__headline {
+    font-size: var(--font-size-base);
+    font-weight: bold;
+    margin-bottom: var(--spacing-base);
+  }
 
-::slotted([slot='text']), ::slotted([slot='primary-cta']) {
-  margin-bottom: var(--spacing-base);
+  ::slotted([slot='text']), ::slotted([slot='primary-cta']) {
+    margin-bottom: var(--spacing-base);
+  }
+
+  ::slotted([slot='primary-cta']) {
+    margin-top: auto;
+  }
+
 }
