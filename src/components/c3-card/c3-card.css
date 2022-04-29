@@ -37,15 +37,17 @@ h5, span, p, a {
   .card__headline {
     font-size: var(--font-size-base);
     font-weight: bold;
-    margin-bottom: var(--spacing-base);
   }
 
-  ::slotted([slot='text']), ::slotted([slot='primary-cta']) {
+  ::slotted([slot='text']), 
+  ::slotted([slot='primary-cta']), 
+  .card__headline {
     margin-bottom: var(--spacing-base);
   }
 
   ::slotted([slot='primary-cta']) {
     margin-top: auto;
+    align-self: end;
   }
 
 }
