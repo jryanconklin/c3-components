@@ -1,0 +1,47 @@
+/*
+------------------------------------------------------------------------------------------------------------------------
+   ___ _____     ___                                             _       
+  / __\___ /    / __\___  _ __ ___  _ __   ___  _ __   ___ _ __ | |_ ___ 
+ / /    |_ \   / /  / _ \| '_ ` _ \| '_ \ / _ \| '_ \ / _ \ '_ \| __/ __|
+/ /___ ___) | / /__| (_) | | | | | | |_) | (_) | | | |  __/ | | | |_\__ \
+\____/|____/  \____/\___/|_| |_| |_| .__/ \___/|_| |_|\___|_| |_|\__|___/
+                                   |_|          
+------------------------------------------------------------------------------------------------------------------------
+C3 Card CSS File
+------------------------------------------------------------------------------------------------------------------------
+*/
+
+:host {
+  display: block;
+}
+
+/* @TODO Scoped CSS Reset for Component. We'd most likely use a global reset. */
+h5, span, p, a {
+  margin: var(--spacing-0);
+}
+
+/* @TODO Add PostCSS Nested to Nest Styles. */
+/* @TODO Add Design Tokens. */
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid goldenrod;
+  border-radius: var(--spacing-3xs);
+  padding: var(--spacing-0) var(--spacing-base) var(--spacing-0) var(--spacing-base);
+}
+
+::slotted([slot='image']) {
+  width: 100%;
+  border-top-left-radius: calc(var(--spacing-3xs) - var(--spacing-px));
+  border-top-right-radius: calc(var(--spacing-3xs) - var(--spacing-px));
+}
+
+.card__headline {
+  font-size: var(--font-size-base);
+  font-weight: bold;
+  margin-bottom: var(--spacing-base);
+}
+
+::slotted([slot='text']), ::slotted([slot='primary-cta']) {
+  margin-bottom: var(--spacing-base);
+}

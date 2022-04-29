@@ -1,0 +1,114 @@
+{
+  "font": {
+    "weight": {
+      "thin": {
+        "value": "100",
+        "type": "font"
+      },
+      "extralight": {
+        "value": "200",
+        "type": "font"
+      },
+      "light": {
+        "value": "300",
+        "type": "font"
+      },
+      "regular": {
+        "value": "400",
+        "type": "font"
+      },
+      "medium": {
+        "value": "500",
+        "type": "font"
+      },
+      "semibold": {
+        "value": "600",
+        "type": "font"
+      },
+      "bold": {
+        "value": "700",
+        "type": "font"
+      },
+      "bold": {
+        "value": "700",
+        "type": "font"
+      }
+    },
+    "family": {
+      "serif": {
+        "value": "'Georgia', Times, serif",
+        "type": "font",
+        "description": "The primary serif font for headings."
+      },
+      "sans": {
+        "value": "'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif",
+        "type": "font",
+        "description": "The primary sans-serif font for body content, etc."
+      }
+    },
+    "size": {
+      "2xs": {
+        "value": "0.625rem"
+      },
+      "xs": {
+        "value": "0.75rem"
+      },
+      "sm": {
+        "value": "0.875rem"
+      },
+      "base": {
+        "value": "1rem"
+      },
+      "md": {
+        "value": "1.125rem"
+      },
+      "lg": {
+        "value": "1.25rem"
+      },
+      "xl": {
+        "value": "1.375rem"
+      },
+      "2xl": {
+        "value": "1.5rem"
+      },
+      "3xl": {
+        "value": "1.875rem"
+      },
+      "4xl": {
+        "value": "2.25rem"
+      },
+      "5xl": {
+        "value": "3rem"
+      },
+      "6xl": {
+        "value": "3.75rem"
+      },
+      "7xl": {
+        "value": "4.5rem"
+      },
+      "8xl": {
+        "value": "6rem"
+      },
+      "9xl": {
+        "value": "8rem"
+      }
+    }
+  },
+  "lineHeight": {
+    "none": {
+      "value": "1"
+    },
+    "taut": {
+      "value": "1.1"
+    },
+    "tight": {
+      "value": "1.2"
+    },
+    "snug": {
+      "value": "1.3"
+    },
+    "normal": {
+      "value": "1.5"
+    }
+  }
+}
